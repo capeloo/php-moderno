@@ -41,6 +41,7 @@
         $p = new Pessoa;
 
         echo "O valor da variável num é $num, o da n é $n e o tipo da variável v é " . var_dump($v);
+        //deu errado :c
     ?>
 </body>
 </html>
