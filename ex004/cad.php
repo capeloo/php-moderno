@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resultado</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -12,8 +13,13 @@
     </header>
     <main>
         <?php 
-            var_dump($_GET);
+            $nome = $_GET["nome"];
+            $sobrenome = $_GET["sobrenome"];
+            echo "<p> É um prazer te conhecer, $nome $sobrenome! Este é meu site. </p>";
         ?>
+        <p>
+            <a href="javascript:history.go(-1)">Tentar novamente</a>
+        </p>
     </main>
 </body>
 </html>
