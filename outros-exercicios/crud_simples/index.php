@@ -30,6 +30,7 @@
 </nav>
 
     <?php 
+        include("config.php");
         switch(@$_REQUEST["page"]){
             case "novo":
                 include("novo-usuario.php");
@@ -37,6 +38,12 @@
             case "listar":
                 include("listar-usuarios.php");
             break;
+            case "salvar":
+                include("salvar-usuario.php");
+                break;
+            case "editar":
+                include("editar-usuario.php");
+                break;
             default:
                 echo "<h1>Bem vindo!</h1>";
         }
